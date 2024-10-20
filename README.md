@@ -14,8 +14,8 @@ Let's face it: we've all had moments where our to-do lists look like ancient hie
 
 Whether you're planning to conquer the world or just finally clean out the garage, Octasks offers two prompt versions to suit your needs:
 
--   **Insights Mode 🕵️**: Think of it as a friendly chat where the LLM asks you questions to understand exactly what you're aiming for.
--   **Express Mode ⚡**: For when you need a task definition faster than you can say "procrastination."
+-   [**Insights Mode**](./prompts/Octasks_Insights.txt) 🕵️: Think of it as a friendly chat where the LLM asks you questions to understand exactly what you're aiming for.
+-   [**Express Mode**](./prompts/Octasks_Express.txt) ⚡: For when you need a task definition faster than you can say "procrastination."
 
 ## Why Use Octasks? 🤔
 
@@ -37,15 +37,15 @@ Octasks is for anyone whose to-do list is giving them the side-eye:
 
 ## How Does It Work? ⚙️
 
-Octasks provides two prompt templates that you can use with your preferred LLM to generate comprehensive task definitions. It's like having a personal assistant, minus the awkward small talk.
+Octasks provides [two prompt templates](./prompts) that you can use with your preferred LLM to generate comprehensive task definitions. It's like having a personal assistant, minus the awkward small talk.
 
 ### Insights Mode 🕵️
 
-The **Insights Mode** prompt enables an interactive session with the LLM, where it asks you a series of targeted questions to create a detailed task definition tailored to your needs. Think of it as a friendly interrogation—but with fewer bright lights.
+The [**Insights Mode** prompt](./prompts/Octasks_Insights.txt) enables an interactive session with the LLM, where it asks you a series of targeted questions to create a detailed task definition tailored to your needs. Think of it as a friendly interrogation—but with fewer bright lights.
 
 **How to Use Insights Mode:**
 
-1. **Copy the Prompt 📋**: Find the "Insights Mode" prompt in the repository.
+1. **Copy the Prompt 📋**: Find the ["Insights Mode" prompt](./prompts/Octasks_Insights.txt) in the repository.
 2. **Paste into LLM 💻**: Open your preferred LLM (e.g., ChatGPT) and paste the prompt into the chat.
 3. **Engage in Conversation 🗣️**: The LLM will start by greeting you and asking questions about your task.
 4. **Answer the Questions 📝**: Spill the beans about your grand plans.
@@ -63,11 +63,11 @@ The **Insights Mode** prompt enables an interactive session with the LLM, where 
 
 ### Express Mode ⚡
 
-The **Express Mode** prompt allows the LLM to generate a task definition based on a specified field or area with minimal input from you. Perfect for when you're in a hurry or just feeling a bit lazy (we've all been there).
+The [**Express Mode** prompt](./prompts/Octasks_Express.txt) allows the LLM to generate a task definition based on a specified field or area with minimal input from you. Perfect for when you're in a hurry or just feeling a bit lazy (we've all been there).
 
 **How to Use Express Mode:**
 
-1. **Copy the Prompt 📋**: Find the "Express Mode" prompt in the repository.
+1. **Copy the Prompt 📋**: Find the ["Express Mode" prompt](./prompts/Octasks_Express.txt) in the repository.
 2. **Paste into LLM 💻**: Open your LLM and paste the prompt into the chat.
 3. **Specify the Field or Area 🌐**: When prompted, tell the LLM the general area you're interested in. "World peace," perhaps?
 4. **Receive the Task Definition 🎁**: The LLM will work its magic.
