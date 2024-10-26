@@ -145,7 +145,7 @@ The original prompt templates are available for reference in the [prompts direct
 
 ### User Input Examples 📝
 
-Examples of ideas, goals, or problems that you can provide to Octask are available in the [examples directory](./examples/prompts). These examples can help you understand how to structure your input for optimal results. Here are some sample inputs:
+Examples of ideas, goals, or problems that you can provide to Octask:
 
 -   **Idea**: "I want to launch an online course on digital marketing."
 -   **Goal**: "Improve my physical fitness and run a marathon in six months."
