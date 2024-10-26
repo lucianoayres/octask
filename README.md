@@ -1,23 +1,23 @@
-# Octasks 🐙
+# Octask 🐙
 
-![octasks-banner](https://github.com/lucianoayres/octasks/blob/main/images/banner_octasks.png?raw=true)
+![octask-banner](https://github.com/lucianoayres/octask/blob/main/images/banner_octask.png?raw=true)
 
-[What's Octasks? 🐙](#whats-octasks-) · [Why Use Octasks? 🤔](#why-use-octasks-) · [Who Is It For? 👥](#who-is-it-for-) · [How Does It Work? ⚙️](#how-does-it-work-) · [Insights Mode 🕵️](#insights-mode-) · [Express Mode ⚡](#express-mode-) · [Getting Started 🛠️](#getting-started-) · [Pro Tips 💡](#pro-tips-) · [Contributing 🤝](#contributing-) · [License 📄](#license-)
+[What's Octask? 🐙](#whats-octask-) · [Why Use Octask? 🤔](#why-use-octask-) · [Who Is It For? 👥](#who-is-it-for-) · [How Does It Work? ⚙️](#how-does-it-work-) · [Insights Mode 🕵️](#insights-mode-) · [Express Mode ⚡](#express-mode-) · [Getting Started 🛠️](#getting-started-) · [Pro Tips 💡](#pro-tips-) · [Contributing 🤝](#contributing-) · [License 📄](#license-)
 
 ## Supercharge Your LLM to Get Things Done! 🚀
 
-Welcome to **Octasks**—the tool that turns your "I should probably do something about that..." into a clear, actionable plan! We provide specially designed prompts that you can use with your favorite Large Language Model (LLM), like **ChatGPT** or **LLama**, to help you achieve your goals without the usual head-scratching.
+Welcome to **Octask**—the tool that turns your "I should probably do something about that..." into a clear, actionable plan! We provide specially designed prompts that you can use with your favorite Large Language Model (LLM), like **ChatGPT** or **LLama**, to help you achieve your goals without the usual head-scratching.
 
-## What's Octasks? 🐙
+## What's Octask? 🐙
 
-Let's face it: we've all had moments where our to-do lists look like ancient hieroglyphics. Octasks is here to rescue you from the chaos! By providing you with powerful prompts to use with any LLM, we help turn your brilliant (or not-so-brilliant) ideas into well-defined tasks.
+Let's face it: we've all had moments where our to-do lists look like ancient hieroglyphics. Octask is here to rescue you from the chaos! By providing you with powerful prompts to use with any LLM, we help turn your brilliant (or not-so-brilliant) ideas into well-defined tasks.
 
-Whether you're planning to conquer the world or just finally clean out the garage, Octasks offers two prompt versions to suit your needs:
+Whether you're planning to conquer the world or just finally clean out the garage, Octask offers two prompt versions to suit your needs:
 
--   [**Insights Mode**](./prompts/Octasks_Insights.txt) 🕵️: Think of it as a friendly chat where the LLM asks you questions to understand exactly what you're aiming for.
--   [**Express Mode**](./prompts/Octasks_Express.txt) ⚡: For when you need a task definition faster than you can say "procrastination."
+-   [**Insights Mode**](./prompts/Octask_Insights.txt) 🕵️: Think of it as a friendly chat where the LLM asks you questions to understand exactly what you're aiming for.
+-   [**Express Mode**](./prompts/Octask_Express.txt) ⚡: For when you need a task definition faster than you can say "procrastination."
 
-## Why Use Octasks? 🤔
+## Why Use Octask? 🤔
 
 -   **Clarity and Focus 🔍**: Because "Do the thing" isn't exactly helpful.
 -   **Time-Saving ⏳**: Spend less time planning and more time doing—or binge-watching; we don't judge.
@@ -27,7 +27,7 @@ Whether you're planning to conquer the world or just finally clean out the garag
 
 ## Who Is It For? 👥
 
-Octasks is for anyone whose to-do list is giving them the side-eye:
+Octask is for anyone whose to-do list is giving them the side-eye:
 
 -   **Project Managers 🗂️**: Keep your team on the same page instead of different planets.
 -   **Entrepreneurs 💡**: Because starting a business is hard enough without vague goals.
@@ -37,15 +37,15 @@ Octasks is for anyone whose to-do list is giving them the side-eye:
 
 ## How Does It Work? ⚙️
 
-Octasks provides [two prompt templates](./prompts) that you can use with your preferred LLM to generate comprehensive task definitions. It's like having a personal assistant, minus the awkward small talk.
+Octask provides [two prompt templates](./prompts) that you can use with your preferred LLM to generate comprehensive task definitions. It's like having a personal assistant, minus the awkward small talk.
 
 ### Insights Mode 🕵️
 
-The [**Insights Mode** prompt](./prompts/Octasks_Insights.txt) enables an interactive session with the LLM, where it asks you a series of targeted questions to create a detailed task definition tailored to your needs. Think of it as a friendly interrogation—but with fewer bright lights.
+The [**Insights Mode** prompt](./prompts/Octask_Insights.txt) enables an interactive session with the LLM, where it asks you a series of targeted questions to create a detailed task definition tailored to your needs. Think of it as a friendly interrogation—but with fewer bright lights.
 
 **How to Use Insights Mode:**
 
-1. **Copy the Prompt 📋**: Find the ["Insights Mode" prompt](./prompts/Octasks_Insights.txt) in the repository.
+1. **Copy the Prompt 📋**: Find the ["Insights Mode" prompt](./prompts/Octask_Insights.txt) in the repository.
 2. **Paste into LLM 💻**: Open your preferred LLM (e.g., ChatGPT) and paste the prompt into the chat.
 3. **Engage in Conversation 🗣️**: The LLM will start by greeting you and asking questions about your task.
 4. **Answer the Questions 📝**: Spill the beans about your grand plans.
@@ -63,11 +63,11 @@ The [**Insights Mode** prompt](./prompts/Octasks_Insights.txt) enables an intera
 
 ### Express Mode ⚡
 
-The [**Express Mode** prompt](./prompts/Octasks_Express.txt) allows the LLM to generate a task definition based on a specified field or area with minimal input from you. Perfect for when you're in a hurry or just feeling a bit lazy (we've all been there).
+The [**Express Mode** prompt](./prompts/Octask_Express.txt) allows the LLM to generate a task definition based on a specified field or area with minimal input from you. Perfect for when you're in a hurry or just feeling a bit lazy (we've all been there).
 
 **How to Use Express Mode:**
 
-1. **Copy the Prompt 📋**: Find the ["Express Mode" prompt](./prompts/Octasks_Express.txt) in the repository.
+1. **Copy the Prompt 📋**: Find the ["Express Mode" prompt](./prompts/Octask_Express.txt) in the repository.
 2. **Paste into LLM 💻**: Open your LLM and paste the prompt into the chat.
 3. **Specify the Field or Area 🌐**: When prompted, tell the LLM the general area you're interested in. "World peace," perhaps?
 4. **Receive the Task Definition 🎁**: The LLM will work its magic.
@@ -103,4 +103,4 @@ Feel like adding your own flair? We'd love to see it! Feel free to submit issues
 
 ## License 📄
 
-Octasks is released under the [MIT License](LICENSE). Because sharing is caring.
+Octask is released under the [MIT License](LICENSE). Because sharing is caring.
