@@ -1,111 +1,160 @@
-# Octask 🐙
+# 🐙 Octask
 
 ![octask-banner](https://github.com/lucianoayres/octask/blob/main/images/banner_octask.png?raw=true)
 
-[What's Octask? 🐙](#whats-octask-) · [Why Use Octask? 🤔](#why-use-octask-) · [Who Is It For? 👥](#who-is-it-for-) · [How Does It Work? ⚙️](#how-does-it-work-) · [Insights Mode 🕵️](#insights-mode-) · [Express Mode ⚡](#express-mode-) · [Getting Started 🛠️](#getting-started-) · [Pro Tips 💡](#pro-tips-) · [Contributing 🤝](#contributing-) · [License 📄](#license-)
+[What's Octask? 🐙](#whats-octask-) · [Why Use Octask? 🤔](#why-use-octask-) · [How Does It Work? ⚙️](#how-does-it-work-) · [Who Is It For? 👥](#who-is-it-for-) · [How to Use 🛠️](#how-to-use-) · [Using Nino with Ollama 🐶](#using-nino-with-ollama-) · [Templates 📄](#templates-) · [Examples 📂](#examples-) · [License 📄](#license-) · [Contribution 🤝](#contribution-)
 
 ## Supercharge Your LLM to Get Things Done! 🚀
 
-Welcome to **Octask**—the tool that turns your "I should probably do something about that..." into a clear, actionable plan! We provide specially designed prompts that you can use with your favorite Large Language Model (LLM), like **ChatGPT** or **LLama**, to help you achieve your goals without the usual head-scratching.
+### What's Octask? 🐙
 
-## What's Octask? 🐙
+**Octask** is an AI model designed to help you define clear and actionable tasks from your ideas, goals, or problems. By leveraging [Ollama](https://github.com/ollama/ollama), Octask simplifies the process of task definition, enabling you to create customized AI assistants that generate comprehensive task definitions tailored to your needs. It's like having an octopus that organizes your tasks with eight times the efficiency!
 
-Let's face it: we've all had moments where our to-do lists look like ancient hieroglyphics. Octask is here to rescue you from the chaos! By providing you with powerful prompts to use with any LLM, we help turn your brilliant (or not-so-brilliant) ideas into well-defined tasks.
+### Why Use Octask? 🤔
 
-Whether you're planning to conquer the world or just finally clean out the garage, Octask offers two prompt versions to suit your needs:
+-   **Clarity and Focus 🔍**: Automatically generate detailed task definitions without the hassle of starting from scratch.
+-   **Time-Saving ⏳**: Spend less time figuring out what to do and more time actually doing it.
+-   **Customization 🎨**: Provide any idea, goal, or problem, and Octask will create a task definition tailored to you.
+-   **Versatility 🔄**: Fully compatible with [Ollama](https://github.com/ollama/ollama), ensuring seamless model creation and deployment.
 
--   [**Insights Mode**](./prompts/Octask-Insights.txt) 🕵️: Think of it as a friendly chat where the LLM asks you questions to understand exactly what you're aiming for.
--   [**Express Mode**](./prompts/Octask-Express.txt) ⚡: For when you need a task definition faster than you can say "procrastination."
+### How Does It Work? ⚙️
 
-## Why Use Octask? 🤔
+Octask uses Modelfiles that define AI models capable of generating comprehensive task definitions based on user-provided input. By creating these models with Ollama, you can interact with Octask to produce detailed task definitions for your specific needs.
 
--   **Clarity and Focus 🔍**: Because "Do the thing" isn't exactly helpful.
--   **Time-Saving ⏳**: Spend less time planning and more time doing—or binge-watching; we don't judge.
--   **Customization 🎨**: Tailor your task definitions to fit your unique quirks and constraints.
--   **Improved Productivity 📈**: Turn your "maybe someday" into "done and dusted."
--   **Versatility 🔄**: Suitable for world domination plans and weekend DIY projects alike.
+We offer two modes, each with its own Modelfile:
+
+-   [**Octask-Insights1.0**](./modelfiles/Octask-Insights1.0): Enables an interactive session where the AI asks you questions to generate a tailored task definition.
+-   [**Octask-Express1.0**](./modelfiles/Octask-Express1.0): Allows you to get a task definition based on minimal input, perfect for when you're in a hurry.
 
 ## Who Is It For? 👥
 
-Octask is for anyone whose to-do list is giving them the side-eye:
+Octask is for anyone who wants to turn vague ideas into clear, actionable tasks without the usual confusion:
 
--   **Project Managers 🗂️**: Keep your team on the same page instead of different planets.
--   **Entrepreneurs 💡**: Because starting a business is hard enough without vague goals.
--   **Students 📚**: Turn "study stuff" into an actual study plan.
--   **Individuals 🏃‍♂️**: For those personal goals you've been meaning to get around to—yes, we mean that new hobby.
--   **Teams 🤝**: Collaborate without the confusion and accidental "Reply All" emails.
+-   **Project Managers 🗂️**: Keep your projects on track with well-defined tasks.
+-   **Entrepreneurs 💡**: Break down your big ideas into manageable steps.
+-   **Students 📚**: Organize your study plans effectively.
+-   **Individuals 🏃‍♂️**: Turn personal goals into actionable tasks.
+-   **Teams 🤝**: Collaborate efficiently with clear task definitions.
 
-## How Does It Work? ⚙️
+## How to Use 🛠️
 
-Octask provides [two prompt templates](./prompts) that you can use with your preferred LLM to generate comprehensive task definitions. It's like having a personal assistant, minus the awkward small talk.
+Follow these steps to use Octask and generate detailed task definitions:
 
-### Insights Mode 🕵️
+1. **Clone the Repository**:
 
-The [**Insights Mode** prompt](./prompts/Octask-Insights.txt) enables an interactive session with the LLM, where it asks you a series of targeted questions to create a detailed task definition tailored to your needs. Think of it as a friendly interrogation—but with fewer bright lights.
+    ```bash
+    git clone https://github.com/lucianoayres/octask.git
+    cd octask
+    ```
 
-**How to Use Insights Mode:**
+2. **Ensure Ollama is Installed**:
 
-1. **Copy the Prompt 📋**: Find the ["Insights Mode" prompt](./prompts/Octask-Insights.txt) in the repository.
-2. **Paste into LLM 💻**: Open your preferred LLM (e.g., ChatGPT) and paste the prompt into the chat.
-3. **Engage in Conversation 🗣️**: The LLM will start by greeting you and asking questions about your task.
-4. **Answer the Questions 📝**: Spill the beans about your grand plans.
-5. **Review the Task Definition 🔍**: The LLM will generate a task definition based on your answers.
-6. **Request Revisions if Needed 🔄**: Because even AI can't read minds—yet.
+    Make sure you have [Ollama](https://github.com/ollama/ollama) installed on your system.
 
-**Example:**
+3. **Create the Octask Model**:
 
--   **You**: _[Paste the Insights Mode prompt into ChatGPT]_
--   **ChatGPT**: Hello! I'm here to help you define your task clearly and effectively. To get started, could you please tell me the main goal of your task?
--   **You**: I want to plan a surprise birthday party for my best friend.
--   _[The conversation continues with more questions and answers]_
--   **ChatGPT**: Based on our conversation, here's your task definition:
-    -   _[Provides the detailed task definition]_
+    Choose the mode that suits your needs and create the corresponding model.
 
-### Express Mode ⚡
+    **For Insights Mode**:
 
-The [**Express Mode** prompt](./prompts/Octask-Express.txt) allows the LLM to generate a task definition based on a specified field or area with minimal input from you. Perfect for when you're in a hurry or just feeling a bit lazy (we've all been there).
+    ```bash
+    ollama create octask-insights1.0 -f ./modelfiles/Octask-Insights1.0
+    ```
 
-**How to Use Express Mode:**
+    **For Express Mode**:
 
-1. **Copy the Prompt 📋**: Find the ["Express Mode" prompt](./prompts/Octask-Express.txt) in the repository.
-2. **Paste into LLM 💻**: Open your LLM and paste the prompt into the chat.
-3. **Specify the Field or Area 🌐**: When prompted, tell the LLM the general area you're interested in. "World peace," perhaps?
-4. **Receive the Task Definition 🎁**: The LLM will work its magic.
-5. **Request Revisions if Needed 🔄**: Or just sit back and admire the efficiency.
+    ```bash
+    ollama create octask-express1.0 -f ./modelfiles/Octask-Express1.0
+    ```
 
-**Example:**
+4. **Run Octask**:
 
--   **You**: _[Paste the Express Mode prompt into ChatGPT]_
--   **ChatGPT**: Hello! I'm here to help you by generating a task definition. Could you please tell me the field or area you're interested in?
--   **You**: Baking the perfect sourdough bread.
--   **ChatGPT**: Based on your interest, here's a task definition:
-    -   _[Provides the detailed task definition]_
+    **For Insights Mode**:
 
-## Getting Started 🛠️
+    ```bash
+    ollama run octask-insights1.0
+    ```
 
-1. **Download the Prompts ⬇️**: They're not hiding, we promise.
-2. **Choose Your LLM 🤖**: Pick your favorite AI buddy (ChatGPT, LLama, or even that obscure one your friend keeps mentioning).
-3. **Select a Mode 🎯**: Do you want a deep conversation or a quick fix?
-4. **Follow the Instructions 📖**: We made them as straightforward as possible—no secret handshakes required.
-5. **Interact and Review 👀**: Engage with the LLM and marvel at the task definition it generates.
+    **For Express Mode**:
 
-## Pro Tips 💡
+    ```bash
+    ollama run octask-express1.0
+    ```
 
--   **Be Specific 🧐**: The LLM isn't a mind reader (yet), so details help.
--   **Think About Constraints ⛓️**: Mention any limitations like time, budget, or your cat's approval.
--   **Define Success 🏆**: What does "nailed it" look like for you?
--   **Review and Refine 🔄**: Don't be shy—ask for changes if needed.
--   **Try Different Scenarios 🎲**: Mix it up! Who knows what brilliant plans you'll come up with next?
+5. **Provide Your Idea, Goal, or Problem**:
 
-## TODOs
+    When prompted, input your specific idea, goal, or problem. For example:
 
--   Create "Random Task" by Field or Area Prompt
--   Create "Random Task" by Random Field or Area Prompt
+    ```
+    I want to plan a surprise birthday party for my best friend.
+    ```
 
-## Contributing 🤝
+6. **Interact with Octask (Insights Mode)**:
 
-Feel like adding your own flair? We'd love to see it! Feel free to submit issues or pull requests on our GitHub repository. Bonus points if you include a good joke.
+    If using Insights Mode, Octask will ask you a series of questions to better understand your task. Answer these questions to help Octask generate a comprehensive task definition.
+
+7. **Review the Generated Task Definition**:
+
+    Octask will output a detailed task definition based on your input. Review this output and make any necessary adjustments.
+
+8. **Save the Task Definition (Optional)**:
+
+    You can copy the output and save it as a plain text file for future reference.
+
+## Using Nino with Ollama 🐶
+
+You can also use [**Nino**](https://github.com/lucianoayres/nino-cli) to interact with your Ollama models more freely. Nino allows you to send prompts directly to the models from the command line without entering interactive mode, and it also allows you to export the AI's response to a local file.
+
+### Example Command
+
+**For Express Mode**:
+
+```bash
+nino "I want to bake the perfect sourdough bread." --model octask-express1.0 --output task_definition.txt
+```
+
+**For Insights Mode**:
+
+Since Insights Mode involves an interactive session, using Nino may not capture the full interaction. It's recommended to use the interactive mode with `ollama run` for Insights Mode.
+
+## Templates 📄
+
+### Structure 🏗️
+
+The Octask templates streamline task definition by organizing key components, making it easy to configure and customize AI models while ensuring compatibility with Ollama. The structure includes:
+
+1. **Objective and Rules** 📜: Defines the assistant's purpose and lays out guidelines to ensure the generated task definition meets your needs.
+
+2. **Command Specification** 🍳: Details essential commands used in a Modelfile, such as:
+
+    - **META**: Contains metadata about the Modelfile, added as comments.
+    - **FROM**: Specifies the base model version (e.g., `llama2`).
+    - **PARAMETER**: Sets model parameters like `temperature`, `num_ctx`, and `top_p`.
+    - **MESSAGE**: Provides initial messages or prompts for the assistant.
+    - **LICENSE**: Includes licensing information for the Modelfile.
+
+3. **Template and Configuration** 🧩: Offers a standard Modelfile template with placeholders (`<< >>`) that can be customized based on your specific idea, goal, or problem.
+
+4. **User Input** 💡: The specific idea, goal, or problem to generate the most effective task definition.
+
+### Prompts
+
+The original prompt templates are available for reference in the [prompts directory](./prompts). These resources are valuable for understanding the structure of Modelfiles and can serve educational purposes.
+
+## Examples 📂
+
+### User Input Examples 📝
+
+Examples of ideas, goals, or problems that you can provide to Octask are available in the [examples directory](./examples/prompts). These examples can help you understand how to structure your input for optimal results. Here are some sample inputs:
+
+-   **Idea**: "I want to launch an online course on digital marketing."
+-   **Goal**: "Improve my physical fitness and run a marathon in six months."
+-   **Problem**: "I have trouble managing my time between work and personal life."
 
 ## License 📄
 
-Octask is released under the [MIT License](LICENSE). Because sharing is caring.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contribution 🤝
+
+Contributions are welcome! Please fork the repository and submit a pull request if you'd like to propose any changes.
