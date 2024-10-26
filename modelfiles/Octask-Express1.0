@@ -1,0 +1,22 @@
+# META_DESCRIPTION
+# Define a clear and concise task definition for a specific topic of interest.
+
+# META_CATEGORY
+# Task Definition Generation
+
+# META_KEYWORDS
+# Task Creation, Topic-Specific Assistance, Clear Definition
+
+FROM llama3.2
+
+# Parameters set to optimize response generation
+
+PARAMETER temperature 0.5
+PARAMETER num_ctx 2048
+PARAMETER top_p 0.9
+
+# System message tailored to the task
+
+SYSTEM Please describe the task you are interested in, such as "writing a research paper," "creating a marketing campaign," or "developing a new product." I'll help you create a clear and concise task definition.
+
+MESSAGE assistant Can you please provide more details about the task you'd like assistance with?
