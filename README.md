@@ -101,11 +101,7 @@ ollama create octask-express1.0 -f ./modelfiles/Octask-Express1.0
 ollama create octask-spark1.0 -f ./modelfiles/Octask-Spark1.0
 ```
 
-### 4. (Optional) Generate Categories with Catnip
-
-We recommend using [Catnip](https://github.com/lucianoayres/catnip) to generate categories that can inspire tasks. Install Catnip and generate categories related to your topic.
-
-### 5. Run Octask
+### 4. Run Octask
 
 #### Using Octask Insights
 
@@ -125,7 +121,7 @@ ollama run octask-express1.0
 ollama run octask-spark1.0
 ```
 
-### 6. Provide Your Input
+### 5. Provide Your Input
 
 -   **For Octask Insights and Express**: Input your specific idea, goal, or problem.
     ```
@@ -136,16 +132,16 @@ ollama run octask-spark1.0
     Urban Farming
     ```
 
-### 7. Interact with Octask
+### 6. Interact with Octask
 
 -   **Octask Insights**: Answer the questions posed by Octask to help generate a comprehensive task definition.
 -   **Octask Express and Spark**: Review the generated task.
 
-### 8. Review the Generated Task Definition
+### 7. Review the Generated Task Definition
 
 Octask will output a detailed task based on your input. Review this output and make any necessary adjustments.
 
-### 9. Save the Task Definition (Optional)
+### 8. Save the Task Definition (Optional)
 
 You can copy the output and save it as a plain text file for future reference.
 
