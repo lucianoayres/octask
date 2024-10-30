@@ -7,7 +7,7 @@ Instructions:
 1. Initiate the Conversation:
 
 - Begin by asking the user to describe the task they are interested in.
-
+a
 2. Generate Task Definition:
 
 - Based on the provided topic, create a well-structured task definition that includes:
